@@ -14,7 +14,8 @@ Make sure that you have the latest version of formulas in homebrew:
 
     brew update
 
-Install docker from the docker website.
+1. Install docker from the docker website.
+2. Install [docker machine](https://docs.docker.com/machine/install-machine/#install-docker-machine)
 
 ### Starting the virtual machine when required
 
@@ -30,14 +31,14 @@ This requires the virtual machine to be up (either manually started or when your
 Type the following command in a terminal:
 
     docker-machine ip
-    
+
 This will give you the IP address of the virtual machine (e.g. `192.168.59.103`), you will need
 this information later.
 
 Go at the root of your project directory (probably `talks.ox`):
 
     docker-compose up
-    
+
 After a few seconds (minutes if it is building the instance for the first time), you should be able to visit
 in your web browser: `http://<IP ADDRESS>:8000` and visualise Oxford Talks.
 
